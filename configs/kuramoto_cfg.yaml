@@ -1,0 +1,43 @@
+# Kuramoto model parameters
+coupling: 0.4
+dt: 0.0001
+n_nodes: 10000 
+slow_perc: 0.4
+fast_perc: 0.6
+slow_freq: 9
+fast_freq: 11
+
+# Action parameters
+autonom_time: 30
+width_p: 0.0015
+gap: 0.
+kfactor: 0.
+delta: 0.
+
+high_width_p: 1
+high_gap: 97
+high_k_factor: 5
+shift: 50
+nptrans: 500000
+
+impulse: 30.
+
+# Episode length
+ep_length: 126
+avg: 3
+model: 'width_p_1_gap_3_k_10_impulse_2_without_noise_5000000_lstm.zip' #trained model
+
+save_model: './here.zip' 
+save_path: './tensorboards_new/3d_pulse_ampl_30_ent_coef_5e-3_10k_gap_97%_cont/' 
+freq: 1000
+prefix: 'rl' #CHANGE
+
+tensorboard_log: './tensorboards_new/3d_pulse_ampl_30_ent_coef_5e-3_10k_gap_97%_cont/'
+
+
+num_cpu: 32
+
+# General params for training, and evaluating
+num_learning_steps: 10000000
+num_eval_steps: 100
+log_interval: 100
